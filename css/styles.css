@@ -445,7 +445,8 @@ body {
   margin-right: 30px;
   flex-basis: calc(100% / 6);
 }
-.permanent-clients .item:last-child {
+.permanent-clients .item:last-child,
+.last {
   margin-right: 0;
 }
 .icon-item {
