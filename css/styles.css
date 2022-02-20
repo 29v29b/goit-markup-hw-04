@@ -58,7 +58,6 @@ body {
 /* Header&footer */
 
 .header {
-  padding: 24px 0px 24px 0px;
   border-bottom: 1px solid #ececec;
   background: var(--background);
 }
@@ -180,26 +179,18 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-.footer-item {
-  fill: #ffffff;
-}
-.footer-actions .item {
+.team-item.footer-icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   margin-top: 20px;
-  margin-right: 10px;
   padding: 12px;
-
+  fill: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-actions .item:hover,
-.footer-actions .item svg:hover {
-  fill: #ffffff;
-  background-color: var(--accent-color);
-}
-.footer-actions .item:last-child {
-  margin-right: 0px;
+
+.team-item.footer-icon:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Studio */
@@ -250,17 +241,18 @@ body {
 }
 
 .icon-edit {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: var(--filter-btn-color);
   border-radius: 4px;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .features-list {
   display: flex;
-  text-align: left;
 }
 .features-list .item {
   margin: 0 auto;
@@ -434,9 +426,7 @@ body {
 }
 
 .team-item:hover,
-.team-item:focus,
-.team-item svg:hover,
-.team-item svg:focus {
+.team-item:focus {
   fill: #ffffff;
   background-color: var(--accent-color);
 }
